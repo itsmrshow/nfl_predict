@@ -1,0 +1,72 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+*.log
+
+# -------------------------
+# Virtual Environment
+# -------------------------
+.venv/
+venv/
+ENV/
+env/
+odl/
+
+# -------------------------
+# IDE & Editor Files
+# -------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------
+# OS Files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Local Config
+# -------------------------
+local.settings.json
+.env
+.env.*
+
+# -------------------------
+# Project Specific
+# -------------------------
+# Generated CSVs / exports
+*.csv
+*.tsv
+
+# Temp or debug outputs
+tmp/
+temp/
+debug/
+*.bak
+
+# Cache & intermediate data
+*.cache
+.cache/
+__temp__/
+checkpoints/
+
+# Data pulls / API downloads
+data/
+downloads/
+
+# Postgres dumps or backups
+*.sql
+*.dump
