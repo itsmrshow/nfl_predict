@@ -1,10 +1,11 @@
-nfl_data_py 
-pandas 
-numpy 
-SQLAlchemy 
-psycopg2-binary 
+nfl_data_py
+pandas
+numpy
+SQLAlchemy
+psycopg2-binary
 python-dotenv
 requests
 beautifulsoup4
 lxml
 matplotlib
+pytest

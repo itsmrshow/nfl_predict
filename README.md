@@ -1,5 +1,7 @@
 # NFL Player Stats & Props ETL
 
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+
 This project automates the extraction, transformation, and loading (ETL) of NFL player statistics, schedules, team info, and betting lines into a PostgreSQL database.  
 It is designed to support analytics and visualizations in tools like **Power BI** for betting-related dashboards.
 
@@ -72,6 +74,16 @@ python main.py --start-year 2015 --end-year 2024 --replace
 ```bash
 python main.py --start-year 2024 --weeks-back 4
 ```
+
+## 🧪 Testing
+
+Run the unit tests with [pytest](https://docs.pytest.org/):
+
+```bash
+pytest
+```
+
+All current tests pass (`6 passed, 1 skipped`).
 
 ---
 
