@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: ${PGDATABASE:-nfl}
+      POSTGRES_USER: ${PGUSER:-postgres}
+      POSTGRES_PASSWORD: ${PGPASSWORD:-postgres}
+    ports:
+      - "${PGPORT:-5432}:5432"
+  app:
+    build: .
+    env_file:
+      - .env
+    depends_on:
+      - db
+    command: ["python", "main.py"]
